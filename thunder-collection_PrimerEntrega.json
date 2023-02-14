@@ -1,0 +1,191 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "PrimerEntrega",
+    "dateExported": "2023-02-14T23:29:04.422Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "19ee43ef-2a37-4d77-b62e-05e19f630ae8",
+            "name": "Productos",
+            "containerId": "",
+            "created": "2023-02-14T22:35:51.980Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "bce2b63a-b8c1-4787-9451-8c29df63c95f",
+            "name": "ProductCart",
+            "containerId": "",
+            "created": "2023-02-14T22:35:51.981Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "87a3d84e-758c-4a2f-b61d-f280721e49db",
+            "name": "Carrito",
+            "containerId": "",
+            "created": "2023-02-14T22:35:51.982Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e5d6a59a-5add-42d9-b2de-27dab12b3fbb",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "19ee43ef-2a37-4d77-b62e-05e19f630ae8",
+            "name": "/",
+            "url": "http://localhost:8080/productos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-02-14T22:35:51.980Z",
+            "modified": "2023-02-14T22:35:51.980Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "29ca50c6-fb71-428b-8782-24d40b2ca986",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "19ee43ef-2a37-4d77-b62e-05e19f630ae8",
+            "name": "/id",
+            "url": "http://localhost:8080/productos/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-02-14T22:35:51.981Z",
+            "modified": "2023-02-14T22:35:51.981Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "96c72204-3348-422b-9cb3-2c4a22a00e09",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "19ee43ef-2a37-4d77-b62e-05e19f630ae8",
+            "name": "/",
+            "url": "http://localhost:8080/productos",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-02-14T22:35:51.982Z",
+            "modified": "2023-02-14T22:35:51.982Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"CocaCola\",\n    \"description\": \"Bebida\",\n    \"price\": 300,\n    \"thumbnail\": \"urlCocaCola\",\n    \"code\": 10,\n    \"stock\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e193e279-7af9-415a-bac2-cf999bbe1426",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "19ee43ef-2a37-4d77-b62e-05e19f630ae8",
+            "name": "/id",
+            "url": "http://localhost:8080/productos/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-02-14T22:35:51.983Z",
+            "modified": "2023-02-14T22:35:51.983Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2d662c05-21a5-4e8a-99e5-9a53a8e5dba1",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "19ee43ef-2a37-4d77-b62e-05e19f630ae8",
+            "name": "/id",
+            "url": "http://localhost:8080/productos/",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-02-14T22:35:51.984Z",
+            "modified": "2023-02-14T22:35:51.984Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7b8a2fb2-7213-46f8-9882-6736a1d79e50",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "bce2b63a-b8c1-4787-9451-8c29df63c95f",
+            "name": "/",
+            "url": "http://localhost:8080/cart",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-02-14T22:35:51.985Z",
+            "modified": "2023-02-14T22:35:51.985Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "79bdb052-0a41-4d3d-81b9-2dbaf55e09b6",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "bce2b63a-b8c1-4787-9451-8c29df63c95f",
+            "name": "post/",
+            "url": "http://localhost:8080/cart",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-02-14T22:35:51.986Z",
+            "modified": "2023-02-14T23:20:50.638Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \r\n  \"producto\": \"coca\",\r\n    \"quantity\": \"20\"\r\n  \r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "43760d25-92f3-43e3-9b3d-eabe42583a6e",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "87a3d84e-758c-4a2f-b61d-f280721e49db",
+            "name": "/",
+            "url": "http://localhost:8080/carrito",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-02-14T22:35:51.987Z",
+            "modified": "2023-02-14T22:35:51.987Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5e8ed6ae-e1f3-4a6a-aaff-49e32c1a3982",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "87a3d84e-758c-4a2f-b61d-f280721e49db",
+            "name": "post/ ",
+            "url": "http://localhost:8080/carrito",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-02-14T22:35:51.988Z",
+            "modified": "2023-02-14T22:35:51.988Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e251344a-dc98-4c26-b8c6-d56259b62024",
+            "colId": "72247468-2b1c-4388-b262-a2ca1d3e8525",
+            "containerId": "87a3d84e-758c-4a2f-b61d-f280721e49db",
+            "name": "put/",
+            "url": "http://localhost:8080/carrito/canasta/63ebc597757262d92e792e5d/curso/63eb9fd6137f0b7f30fe28a6",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-02-14T22:35:51.989Z",
+            "modified": "2023-02-14T22:35:51.989Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"articulos\": \"lays\",\n  \"quantity\": \"80\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
